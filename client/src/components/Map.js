@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Map(props) {
   return (
-    <MapContainer
+    <MapContainer id="map-container"
       center={props.center}
       zoom={12}
       scrollWheelZoom={true}
@@ -71,7 +71,7 @@ function Map(props) {
       </Marker>
       <Marker position={[40.6825734, -73.993138]}>
         <Popup>
-          <Link to={'/restaurant/zombie-hut'}>Zombie Hut</Link>
+          <Link to={"/restaurant/zombie-hut"}>Zombie Hut</Link>
         </Popup>
       </Marker>
       <Marker position={[40.7214424,-73.9573563]}>

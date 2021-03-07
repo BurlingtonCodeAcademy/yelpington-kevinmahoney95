@@ -1,11 +1,15 @@
 #nav-bar {
   background-color: salmon;
   margin: 0;
-  padding-left: 3%;
-  width: 12% 
+  padding-left: 2%;
+  width: 15%
 
 }
 
 #nav-bar-container {
-  margin: 0;
+  width: 15%,
+}
+
+#map-container {
+  margin: 0
 }

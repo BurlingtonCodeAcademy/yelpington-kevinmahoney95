@@ -14,13 +14,19 @@ function NavBar(props) {
     }
   });
 
+  const capitalize = (name) => {
+    let nameArray = name.split('-')
+    nameArray = nameArray.map((name) => (name[0].toUpperCase() + name.slice(1)))
+    return nameArray.join(" ")
+  }
+
   return (
     <section id="nav-bar-container">
       <ul id="nav-bar">
         {rest.map((name, index) => {
           return (
             <div key={index}>
-              <Link to={`/restaurant/${name}`}>{name.replaceAll('-', ' ')}</Link>
+              <Link to={`/restaurant/${name}`}>{capitalize(name)}</Link>
             </div>
           );
         })}
