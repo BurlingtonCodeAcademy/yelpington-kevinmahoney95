@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/home";
 import RestaurantPage from "./components/restaurant";
-import { useState } from "react";
+//import { useState } from "react";
 
 import "./App.css";
 

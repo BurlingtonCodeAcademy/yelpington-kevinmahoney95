@@ -26,11 +26,11 @@ function RestaurantPage(props) {
     {/* div to wrap info and map in flex box */}
       <div class="main">
         <span id="restaurant-info">
-          <h2 class="restaurant-info">{restaurantInfo.name}</h2>
-          <h5 class="restaurant-info">Address: {restaurantInfo.address}</h5>
-          <h5 class="restaurant-info">Phone Number: {restaurantInfo.phone}</h5>
-          <h5 class="restaurant-info">Hours: {restaurantInfo.hours}</h5>
-          <p class="restaurant-info">Notes: {restaurantInfo.notes}</p>
+          <h2 class="restaurant-info-text">{restaurantInfo.name}</h2>
+          <h5 class="restaurant-info-text">Address: {restaurantInfo.address}</h5>
+          <h5 class="restaurant-info-text">Phone Number: {restaurantInfo.phone}</h5>
+          <h5 class="restaurant-info-text">Hours: {restaurantInfo.hours}</h5>
+          <p class="restaurant-info-text">Notes: {restaurantInfo.notes}</p>
         </span>
         {/* still need to get this to go to new center and zoom */}
          <Map center={center} /> 

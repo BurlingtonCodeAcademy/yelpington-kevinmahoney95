@@ -7,7 +7,7 @@ function Home(props) {
   //Set beginning center of map
   const [center, setCenter] = useState([40.7, -73.98]);
 
-  //Return main content of home page (header, Nav Bar, and Map)
+  //Return main content of home page (Nav Bar and Map)
   return (
     <div>
       <div class="main">
