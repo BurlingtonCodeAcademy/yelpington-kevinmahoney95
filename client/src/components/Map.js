@@ -9,16 +9,16 @@ function Map(props) {
     <MapContainer id="map-container"
       center={props.center}
       zoom={12}
-      scrollWheelZoom={true}
-      doubleClickZoom={true}
+      scrollWheelZoom={false}
+      doubleClickZoom={false}
       zoomControl={true}
-      touchZoom={true}
+      touchZoom={false}
       style={{
         height: "500px",
-        width: "400px",
+        width: "500px",
         zIndex: 0,
-        marginLeft: "15vw",
-        marginRight: "0",
+        
+        
       }}
     >
       {/* <ChangeView center={props.center} zoom={props.zoom} /> */}
@@ -39,7 +39,7 @@ function Map(props) {
       </Marker>
       <Marker position={[40.7288139, -73.98966236200172]}>
         <Popup>
-          <Link to={"/restaurant/mcsorley's-old-ale-house"}>
+          <Link to={"/restaurant/mcSorley's-old-ale-house"}>
             McSorley's Old Ale House
           </Link>
         </Popup>
