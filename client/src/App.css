@@ -6,8 +6,10 @@ body {
     rgba(5, 3, 43, 1) 35%,
     rgba(35, 23, 128, 1) 100%
   );
+  margin: 0
 }
 
+/* style for header*/
 header {
   text-align: center;
   color: white;
@@ -61,12 +63,43 @@ a {
   color: white;
 }
 
+/*style for map*/
 #map-container {
   border: 5px solid #053317;
   border-radius: 1%;
 }
 
-#main {
+/*sets up flex box for map and nav bar*/
+.main {
   display: flex;
   flex-direction: row;
 }
+
+/*style for restaurant page*/
+.restaurant-info {
+  color: white;
+  margin-left: 5%
+}
+
+#restaurant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background: rgb(36, 0, 30);
+  background: linear-gradient(
+    47deg,
+    rgba(36, 0, 30, 1) 0%,
+    rgba(43, 3, 40, 1) 22%,
+    rgba(128, 23, 59, 1) 100%
+  );
+  margin: 0;
+  width: 20%;
+  height: 55vh;
+  border-top: 5px solid #053317;
+  border-bottom: 5px solid #053317;
+  border-right: 5px solid #053317;
+  margin-right: 10%;
+}
+
+

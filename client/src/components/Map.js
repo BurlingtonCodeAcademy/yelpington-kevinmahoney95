@@ -1,12 +1,11 @@
-
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Link } from "react-router-dom";
 
-// import ChangeView from "./ChangeView";
-
+//sets function for map
 function Map(props) {
   return (
-    <MapContainer id="map-container"
+    <MapContainer
+      id="map-container"
       center={props.center}
       zoom={12}
       scrollWheelZoom={false}
@@ -17,8 +16,6 @@ function Map(props) {
         height: "500px",
         width: "500px",
         zIndex: 0,
-        
-        
       }}
     >
       {/* <ChangeView center={props.center} zoom={props.zoom} /> */}
@@ -26,7 +23,7 @@ function Map(props) {
         url="https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}"
         attribution='Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
       />
-
+      {/* makes markers, links, and popups on map */}
       <Marker position={[40.6867628, -73.9547501]}>
         <Popup>
           <Link to={"/restaurant/do-or-dive"}>Do or Dive</Link>
@@ -39,7 +36,7 @@ function Map(props) {
       </Marker>
       <Marker position={[40.7288139, -73.98966236200172]}>
         <Popup>
-          <Link to={"/restaurant/mcSorley's-old-ale-house"}>
+          <Link to={"/restaurant/mcSorleys-old-ale-house"}>
             McSorley's Old Ale House
           </Link>
         </Popup>
@@ -66,7 +63,7 @@ function Map(props) {
       </Marker>
       <Marker position={[40.738246399999994, -73.98321372069306]}>
         <Popup>
-          <Link to={"/restaurant/molly's-shebeen"}>Molly's Shebeen</Link>
+          <Link to={"/restaurant/mollys-shebeen"}>Molly's Shebeen</Link>
         </Popup>
       </Marker>
       <Marker position={[40.6825734, -73.993138]}>
@@ -74,12 +71,12 @@ function Map(props) {
           <Link to={"/restaurant/zombie-hut"}>Zombie Hut</Link>
         </Popup>
       </Marker>
-      <Marker position={[40.7214424,-73.9573563]}>
+      <Marker position={[40.7214424, -73.9573563]}>
         <Popup>
           <Link to={"/restaurant/brooklyn-brewery"}>Brooklyn Brewery</Link>
         </Popup>
       </Marker>
-      <Marker position={[40.7310814,-74.0027985]}>
+      <Marker position={[40.7310814, -74.0027985]}>
         <Popup>
           <Link to={"/restaurant/tacombi"}>Tacombi</Link>
         </Popup>

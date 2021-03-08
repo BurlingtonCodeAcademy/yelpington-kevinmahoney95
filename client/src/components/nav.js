@@ -17,10 +17,10 @@ function NavBar(props) {
 
   //Capitalizes first letter of every word of restaurant name
   const capitalize = (name) => {
-    let idArray = name.split('-')
-    idArray = idArray.map((name) => (name[0].toUpperCase() + name.slice(1)))
-    return idArray.join(" ")
-  }
+    let idArray = name.split("-");
+    idArray = idArray.map((name) => name[0].toUpperCase() + name.slice(1));
+    return idArray.join(" ");
+  };
 
   //Creates nav bar of all IDs in ID json with links to a respective page
   return (
@@ -29,7 +29,9 @@ function NavBar(props) {
         {rest.map((name, index) => {
           return (
             <div id="list-item" key={index}>
-              <b><Link to={`/restaurant/${name}`}>{capitalize(name)}</Link></b>
+              <b>
+                <Link to={`/restaurant/${name}`}>{capitalize(name)}</Link>
+              </b>
             </div>
           );
         })}
@@ -38,4 +40,4 @@ function NavBar(props) {
   );
 }
 
-export default NavBar
+export default NavBar;
