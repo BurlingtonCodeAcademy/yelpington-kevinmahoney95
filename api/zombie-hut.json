@@ -1,0 +1,12 @@
+{
+  "id": "zombie-hut",
+  "name": "Zombie Hut",
+  "address": "273 Smith St",
+  "phone": "(718) 875-3433",
+  "hours": "1:00 pm - 11:00 pm",
+  "latitude": "40.6825734",
+  "longitude": "-73.993138",
+  "notes": [
+    "Tiki themed bar with tropical cocktails and a rotating selection of craft beer."
+  ]
+}

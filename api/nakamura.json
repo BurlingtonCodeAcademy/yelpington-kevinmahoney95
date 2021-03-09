@@ -1,0 +1,10 @@
+{
+  "id": "nakamura",
+  "name": "Nakamura",
+  "address": "172 Delancey St",
+  "phone": "(212) 614-1810",
+  "hours": "12:00 pm - 9:00 am",
+  "latitude": "40.717863",
+  "longitude": "-73.9851883",
+  "notes": ["The best ramen in the city. Try the Ton Toro"]
+}

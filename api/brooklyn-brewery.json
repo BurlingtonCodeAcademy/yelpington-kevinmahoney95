@@ -1,0 +1,10 @@
+{
+  "id": "brooklyn-brewery",
+  "name": "Brooklyn Brewery",
+  "address": "79 N 11th St",
+  "phone": "(718) 486-7422",
+  "hours": "12:00 am - 8:00pm",
+  "latitude": "40.7214424",
+  "longitude": "-73.9573563",
+  "notes": ["Spacious brewery with beers of all styles and flavors. Try the Rosé de Ville."]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "mollys-shebeen",
+  "name": "Molly's Shebeen",
+  "address": "287 3rd Ave",
+  "phone": "(212) 889-3361",
+  "hours": "4:00 pm - 10:00 pm",
+  "latitude": "40.738246399999994",
+  "longitude": "-73.98321372069306",
+  "notes": ["Traditional Irish bar with a great Irish breakfast on weekends."]
+}
